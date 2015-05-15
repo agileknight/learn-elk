@@ -14,3 +14,9 @@ dataelk:
   image: busybox
   volumes:
     - /data
+
+client:
+  build: ./client
+  hostname: client01
+  links:
+    - elk
