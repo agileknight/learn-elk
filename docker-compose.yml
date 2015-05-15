@@ -3,8 +3,9 @@ elk:
   ports:
     - "80:80"
     - "5043:5043"
+  hostname: logstash
   volumes:
-    - ./ssl:/etc/ssl
+    - ./tls:/etc/pki/tls
     - ./logstash:/etc/logstash
   volumes_from:
     - dataelk
