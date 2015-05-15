@@ -3,6 +3,7 @@ elk:
   ports:
     - "80:80"
     - "5043:5043"
+    - "25826:25826/udp"
   hostname: logstash
   volumes:
     - ./tls:/etc/pki/tls
